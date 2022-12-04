@@ -1,0 +1,10 @@
+student_id int 100
+student_name varchar 255
+guardian_name varchar 255
+student_ph varchar 255
+guardian_ph varchar 255
+passport_nic text
+subject text
+grade varchar 255
+date date
+email varchar 255

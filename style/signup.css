@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'lora',serif;
+    
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    background-image: url('../image/wallpaper\ \(15\).jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.wrapper{
+    margin-top: 0px;
+    padding: 10px;
+    background-color: rgba(240, 255, 255,0.7);
+    width: 450px;
+    box-shadow: 0 0 12px rgb(117, 116, 116), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
+    display: grid;
+}
+
+.wrapper .signup .title{
+    text-align: center;
+} 
+
+.field{
+    padding-top: 10px;
+}
+
+.field .btn{
+    width: 100%;
+    margin-top: 10px;
+}
+.link a{
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+}
+
+.form-detail{
+    display: grid;
+    place-items: center;
+    margin: 8rem 0rem;
+}
+.form-detail span:last-child{
+    padding-left: 100px;
+}
+.form-detail input{
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 0px 10px;
+}
+
+.form-detail #showPassword{
+    margin-top: 7px;
+    height: 100%;
+}
+
+.field{
+    display: grid;
+    grid-template-columns: 100px auto;
+    margin: 10px 0px;
+    align-items: center;
+}
+
+.button{
+    display: block;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 400px){
+    .wrapper{
+        width: 100%;
+    }
+}
+
+.users{
+    padding: 25px 30px;
+}
+
+.users header{
+    align-items: center;
+    border: 1px solid black;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-color: transparent;
+}
+
+.wrapper img{
+    object-fit: cover;
+    border-radius: 30%;
+}
+
+.users header .content{
+    display: grid;
+    margin: 10px;
+    place-items: center;
+    grid-template-columns: 50px auto 50px;
+}
+
+.users header .content img{
+    height: 50px;
+    align-content: center;
+    justify-content: center;
+    width: 50px;
+    border: 1px solid darkslategrey;
+}
+.users header .details{
+    margin-left: 15px;
+    padding-top: 10px;
+}
+
+.logout{
+    text-align: center;
+    text-decoration: none;
+    color: darkslategrey;
+    font-size: 18px;
+}
+
+.users .search{
+    color: #fff;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 17px;
+    padding: 20px 15px;
+    background-color: cadetblue;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid black;
+    border-top: 0;
+}
+
+.users .search input{
+    position: absolute;
+    height: 40px;
+    width: calc(100% - 80px);
+    border: 1px solid darkslategrey;
+    padding: 0 13px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.users .search .btn{
+    border: 1px solid darkslategrey;
+    height: 40px;
+    margin: 0px;
+}
