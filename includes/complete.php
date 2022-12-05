@@ -5,6 +5,7 @@
             <table class="display">
                 <thead>
                     <tr>
+                        <th>Stu.No</th>
                         <th>Name</th>
                         <th>Subject</th>
                         <th>Grade</th>
@@ -17,11 +18,12 @@
                 <tbody>
                     <?php 
                         include_once('../config/dbcon.php');
-                        $query = mysqli_query($con,"select * from students");
+                        $query = mysqli_query($con,"select * from complete");
                         while($row=mysqli_fetch_array($query))
                             {  
                         ?>
                     <tr>
+                        <td> <?php echo ucwords($row['roll_no']) ?> </td>
                         <td> <?php echo ucwords($row['student_name']) ?> </td>
                         <td> <?php echo ucwords(strtolower($row['subjects']), ',') ?> </td>
                         <td> <?php echo ucwords($row['grade']) ?> </td>
